@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', 'WelcomeController@welcome');
-Route::get('/mes-articles', 'UserController@articles');
+Route::get('/', 'BlogController@index');
+Route::get('/apropos', 'BlogController@apropos');
+Route::resource('articles', 'ArticlesController');
 
-Route::resource('/blog', 'BlogController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

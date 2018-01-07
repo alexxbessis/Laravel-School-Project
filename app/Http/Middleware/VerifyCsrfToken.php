@@ -1,27 +1,17 @@
 <?php
-namespace App\Http\Controllers\Auth;
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
-class ForgotPasswordController extends Controller
+
+namespace App\Http\Middleware;
+
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
+
+class VerifyCsrfToken extends Middleware
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Password Reset Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller is responsible for handling password reset emails and
-    | includes a trait which assists in sending these notifications from
-    | your application to your users. Feel free to explore this trait.
-    |
-    */
-    use SendsPasswordResetEmails;
     /**
-     * Create a new controller instance.
+     * The URIs that should be excluded from CSRF verification.
      *
-     * @return void
+     * @var array
      */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
+    protected $except = [
+        //
+    ];
 }
