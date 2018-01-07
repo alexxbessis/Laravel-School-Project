@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
+class ComposerStaticInit7b55fe784a7440a0747787ec46176d20
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -16,7 +16,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -40,7 +39,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         ),
         'S' => 
         array (
-            'Symfony\\Thanks\\' => 15,
             'Symfony\\Polyfill\\Php70\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
@@ -99,12 +97,12 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'C' => 
         array (
             'Cron\\' => 5,
-            'Collective\\Html\\' => 16,
             'Carbon\\' => 7,
         ),
         'A' => 
         array (
             'App\\' => 4,
+            'Actuallymab\\LaravelComment\\' => 27,
         ),
     );
 
@@ -134,10 +132,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
-        ),
-        'Symfony\\Thanks\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/thanks/src',
         ),
         'Symfony\\Polyfill\\Php70\\' => 
         array (
@@ -263,10 +257,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         array (
             0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
         ),
-        'Collective\\Html\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
-        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -274,6 +264,10 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Actuallymab\\LaravelComment\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/actuallymab/laravel-comment/src',
         ),
     );
 
@@ -317,10 +311,12 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
     );
 
     public static $classMap = array (
-        'App\\Article' => __DIR__ . '/../..' . '/app/Article.php',
+        'Actuallymab\\LaravelComment\\CanComment' => __DIR__ . '/..' . '/actuallymab/laravel-comment/src/CanComment.php',
+        'Actuallymab\\LaravelComment\\Commentable' => __DIR__ . '/..' . '/actuallymab/laravel-comment/src/Commentable.php',
+        'Actuallymab\\LaravelComment\\LaravelCommentServiceProvider' => __DIR__ . '/..' . '/actuallymab/laravel-comment/src/LaravelCommentServiceProvider.php',
+        'Actuallymab\\LaravelComment\\Models\\Comment' => __DIR__ . '/..' . '/actuallymab/laravel-comment/src/Models/Comment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\ArticlesController' => __DIR__ . '/../..' . '/app/Http/Controllers/ArticlesController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -328,12 +324,15 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'App\\Http\\Controllers\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/BlogController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+        'App\\Http\\Controllers\\WelcomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/WelcomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Post' => __DIR__ . '/../..' . '/app/Post.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -345,13 +344,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
-        'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
-        'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
-        'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
-        'Collective\\Html\\FormFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/FormFacade.php',
-        'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
-        'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
-        'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
@@ -3118,6 +3110,7 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
+        'Symfony\\Component\\EventDispatcher\\ContainerAwareEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/ContainerAwareEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/WrappedListener.php',
@@ -3530,8 +3523,6 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
         'Symfony\\Component\\VarDumper\\VarDumper' => __DIR__ . '/..' . '/symfony/var-dumper/VarDumper.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php70\\Php70' => __DIR__ . '/..' . '/symfony/polyfill-php70/Php70.php',
-        'Symfony\\Thanks\\Command\\ThanksCommand' => __DIR__ . '/..' . '/symfony/thanks/src/Command/ThanksCommand.php',
-        'Symfony\\Thanks\\Thanks' => __DIR__ . '/..' . '/symfony/thanks/src/Thanks.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
@@ -3645,10 +3636,10 @@ class ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit10e9517ba98aad7d4b2850292c3f519f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7b55fe784a7440a0747787ec46176d20::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7b55fe784a7440a0747787ec46176d20::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7b55fe784a7440a0747787ec46176d20::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7b55fe784a7440a0747787ec46176d20::$classMap;
 
         }, null, ClassLoader::class);
     }

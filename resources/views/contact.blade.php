@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            <h1>Contact Us</h1>
+            <h1>Contact us</h1>
             <hr>
             <form>
                 <div class="form-group">
@@ -15,7 +15,7 @@
                     <label name="message">Message :</label>
                     <textarea id="message" name="message" class="form-control">Type your message here...</textarea>
                 </div>
-                <input type="submit" value="Send Message" class="btn btn-success">
+                <input type="submit" value="Send message" class="btn btn-success">
             </form>
         </div>
     </div>
